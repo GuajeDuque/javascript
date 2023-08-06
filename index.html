@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Cornershop by UBER</title>
 </head>
 <body>
-    <script src="./js/codigo.js"></script>
+
+<div>
+  <label for="nombrePicker">Nombre:</label>
+  <input type="text" id="nombrePicker">
+</div>
+
+<div>
+  <label for="cantidadPedidos">Cantidad de Pedidos:</label>
+  <input type="number" id="cantidadPedidos" min="1">
+</div>
+
+<div id="skusContainer">
+  <!-- Aquí se agregarán los campos de entrada de SKU -->
+</div>
+
+<button id="agregarPedido">Agregar Pedido</button>
+<button id="mostrarResultados" style="display: none;">Mostrar Resultados</button>
+<button id="limpiarPantalla" style="display: none;">Limpiar Pantalla</button>
+<div id="resultado"></div>
+
+<script src="./js/codigo.js"></script>
+
 </body>
 </html>
+
